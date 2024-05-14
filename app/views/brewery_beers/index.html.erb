@@ -1,0 +1,3 @@
+<% @beers.each do |beer| %>
+    <%= link_to beer.style_name, "/beers/#{beer.id}" %>
+<% end %>

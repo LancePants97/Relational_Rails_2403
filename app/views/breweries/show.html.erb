@@ -1,6 +1,5 @@
 <h1>Breweries</h1>
-<% @breweries.each do |brewery| %>
-    <h3><p><%= brewery.name %></p></h3>
-    <p>Beers on Tap: <%= brewery.beers_on_tap %></p>
-    <p>Pet Friendly: <%= brewery.pet_friendly %></p>
-<% end %>
+<h3><p><%= @brewery.name %></p></h3>
+<p>Beers on Tap: <%= @brewery.beers_on_tap %></p>
+<p>Pet Friendly: <%= @brewery.pet_friendly %></p>
+

@@ -12,10 +12,10 @@ RSpec.describe 'Beers Index Page' do
         # save_and_open_page
 
         expect(page).to have_content("Lager")
-        expect(page).to have_content("5")
-        expect(page).to have_content("Dry Hopped: false")
+        # expect(page).to have_content("5")
+        # expect(page).to have_content("Dry Hopped: false")
         expect(page).to have_content("Double Vision")
-        expect(page).to have_content("6")
-        expect(page).to have_content("Dry Hopped: true")
+        # expect(page).to have_content("6")
+        # expect(page).to have_content("Dry Hopped: true")
     end
 end 

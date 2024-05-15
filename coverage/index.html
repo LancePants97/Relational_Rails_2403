@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2024-05-14T18:15:57-04:00">2024-05-14T18:15:57-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2024-05-14T20:02:24-04:00">2024-05-14T20:02:24-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  98.44%
+  98.33%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.02
+       <span class="red">
+         0.98
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>17</b> files in total.
+    <b>15</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>64</b> relevant lines,
-    <span class="green"><b>63</b> lines covered</span> and
+    <b>60</b> relevant lines,
+    <span class="green"><b>59</b> lines covered</span> and
     <span class="red"><b>1</b> lines missed. </span>
     (<span class="green">
-  98.44%
+  98.33%
 </span>
 )
   </div>
@@ -82,24 +82,13 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#c08b2f9b65402db35bb1754e42b0e2c2aec1750e" class="src_link" title="app/controllers/beers_controller.rb">app/controllers/beers_controller.rb</a></td>
+            <td class="strong t-file__name"><a href="#f429d31b91155ea8f3e4685e953a92535f0788f4" class="src_link" title="app/controllers/breweries_controller.rb">app/controllers/breweries_controller.rb</a></td>
             <td class="red strong cell--number t-file__coverage">80.00 %</td>
             <td class="cell--number">9</td>
             <td class="cell--number">5</td>
             <td class="cell--number">4</td>
             <td class="cell--number">1</td>
             <td class="cell--number">0.80</td>
-            
-          </tr>
-        
-          <tr class="t-file">
-            <td class="strong t-file__name"><a href="#1d62a8bccbe086c211ec954e9c3e63d41e0982e5" class="src_link" title="app/controllers/brewery_beers_controller.rb">app/controllers/brewery_beers_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.50</td>
             
           </tr>
         
@@ -116,17 +105,6 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#2a23faf601983f372a7a207e8f772de78eedfb2b" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
-            
-          </tr>
-        
-          <tr class="t-file">
-            <td class="strong t-file__name"><a href="#3dcaf6626438b2f94cb9ffced039bb8820414200" class="src_link" title="app/models/beer.rb">app/models/beer.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">3</td>
             <td class="cell--number">2</td>
@@ -249,9 +227,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#e227980be666a01104c43bc147e55e85a2929455" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">6</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -327,9 +305,9 @@
 </div>
 
       
-        <div class="source_table" id="c08b2f9b65402db35bb1754e42b0e2c2aec1750e">
+        <div class="source_table" id="f429d31b91155ea8f3e4685e953a92535f0788f4">
   <div class="header">
-    <h3>app/controllers/beers_controller.rb</h3>
+    <h3>app/controllers/breweries_controller.rb</h3>
     <h4>
       <span class="red">
   80.0%
@@ -360,7 +338,7 @@
 
             
 
-            <code class="ruby">class BeersController &lt; ApplicationController</code>
+            <code class="ruby">class BreweriesController &lt; ApplicationController</code>
           </li>
         </div>
       
@@ -376,13 +354,13 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="3">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">        @beers = Beer.all</code>
+            
+
+            <code class="ruby">        @breweries = Brewery.all</code>
           </li>
         </div>
       
@@ -420,13 +398,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="7">
+            
             
 
             
 
-            <code class="ruby">        @beer = Beer.find(params[:id])</code>
+            <code class="ruby">        @brewery = Brewery.find(params[:id])</code>
           </li>
         </div>
       
@@ -443,103 +421,6 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="9">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="1d62a8bccbe086c211ec954e9c3e63d41e0982e5">
-  <div class="header">
-    <h3>app/controllers/brewery_beers_controller.rb</h3>
-    <h4>
-      <span class="green">
-  100.0%
-</span>
-
-      lines covered
-    </h4>
-
-    
-
-    <div class="t-line-summary">
-      <b>4</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-
-    
-
-  </div>
-
-  <pre>
-    <ol>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">class BreweryBeersController &lt; ApplicationController</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    def index</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="3">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">        brewery = Brewery.find(params[:brewery_id])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="4">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">        @beers = brewery.beers</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="6">
             
             
 
@@ -652,70 +533,6 @@
             
 
             <code class="ruby">  primary_abstract_class</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="3">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="3dcaf6626438b2f94cb9ffced039bb8820414200">
-  <div class="header">
-    <h3>app/models/beer.rb</h3>
-    <h4>
-      <span class="green">
-  100.0%
-</span>
-
-      lines covered
-    </h4>
-
-    
-
-    <div class="t-line-summary">
-      <b>2</b> relevant lines.
-      <span class="green"><b>2</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-
-    
-
-  </div>
-
-  <pre>
-    <ol>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">class Beer &lt; ApplicationRecord</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    belongs_to :brewery</code>
           </li>
         </div>
       
@@ -3171,8 +2988,8 @@
     
 
     <div class="t-line-summary">
-      <b>4</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>6</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -3245,12 +3062,34 @@
 
             
 
+            <code class="ruby">  get &#39;/breweries&#39;, to: &#39;breweries#index&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  get &#39;/breweries/:id&#39;, to: &#39;breweries#show&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">  get &#39;/breweries/:brewery_id/beers&#39;, to: &#39;brewery_beers#index&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 

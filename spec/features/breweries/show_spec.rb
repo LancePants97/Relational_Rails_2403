@@ -6,9 +6,9 @@ RSpec.describe 'the beers show page' do
         tlb = Brewery.create!(name: 'Twin Lights', beers_on_tap: 8, pet_friendly: true)
         kane = Brewery.create!(name: 'Kane', beers_on_tap: 15, pet_friendly: false)
         
-        visit '/breweries'
+        visit "/breweries/#{tlb.id}"
 
-        # save_and_open_page
+        save_and_open_page
 
         expect(page).to have_content("Twin Lights")
         expect(page).to have_content("8")

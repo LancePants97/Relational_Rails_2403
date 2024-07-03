@@ -245,7 +245,157 @@
           null
         ]
       },
-      "/Users/lancenelson/turing_work/2mod/projects/relational_rails/app/models/brewery.rb": {
+      "/Users/lancenelson/turing_work/2mod/projects/relational_rails/spec/features/beers/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/lancenelson/turing_work/2mod/projects/relational_rails/spec/features/breweries/beers/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/lancenelson/turing_work/2mod/projects/relational_rails/spec/features/breweries/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/lancenelson/turing_work/2mod/projects/relational_rails/spec/features/breweries/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/lancenelson/turing_work/2mod/projects/relational_rails/spec/models/beer_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null
+        ]
+      },
+      "/Users/lancenelson/turing_work/2mod/projects/relational_rails/app/models/beer.rb": {
         "lines": [
           1,
           1,
@@ -259,7 +409,17 @@
           null
         ]
       },
-      "/Users/lancenelson/turing_work/2mod/projects/relational_rails/app/models/beer.rb": {
+      "/Users/lancenelson/turing_work/2mod/projects/relational_rails/spec/models/brewery_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/lancenelson/turing_work/2mod/projects/relational_rails/app/models/brewery.rb": {
         "lines": [
           1,
           1,
@@ -270,11 +430,11 @@
         "lines": [
           1,
           1,
-          0,
+          1,
           null,
           null,
           1,
-          2,
+          3,
           null,
           null
         ]
@@ -284,8 +444,32 @@
           1,
           null
         ]
+      },
+      "/Users/lancenelson/turing_work/2mod/projects/relational_rails/app/controllers/brewery_beers_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/lancenelson/turing_work/2mod/projects/relational_rails/app/controllers/breweries_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1715798931
+    "timestamp": 1720049028
   }
 }

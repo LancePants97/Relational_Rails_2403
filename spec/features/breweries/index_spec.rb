@@ -30,7 +30,7 @@ RSpec.describe 'Breweries Index Page' do
   it "displays the parents in order of most recently created and shows when each was created" do
     new_brewery = Brewery.create!(name: "Avery Brewing", beers_on_tap: 30, pet_friendly: true)
     visit "/breweries"
-    save_and_open_page
+
     within("#breweries") do
       expect(new_brewery.name).to appear_before(@kane.name)
       expect(@kane.name).to appear_before(@tlb.name)
@@ -41,7 +41,7 @@ RSpec.describe 'Breweries Index Page' do
     end
 
     within("#brewery-#{@kane.id}") do
-		  expect(page).to have_content(@kane.created_at)
+      expect(page).to have_content(@kane.created_at)
     end
   end
 end 

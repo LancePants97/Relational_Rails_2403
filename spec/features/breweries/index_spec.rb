@@ -44,4 +44,13 @@ RSpec.describe 'Breweries Index Page' do
       expect(page).to have_content(@kane.created_at)
     end
   end
+
+  # User Story 9
+	it "displays a link to the breweries index" do 
+		visit "/beers"
+
+		click_link("Breweries")
+
+		expect(current_path).to eq("/breweries")
+	end
 end 

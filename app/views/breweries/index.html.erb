@@ -1,0 +1,10 @@
+<h1>Breweries</h1>
+<section id="breweries">
+<% @breweries.each do |brewery| %>
+  <section id="brewery-<%= brewery.id %>">
+  <h3><p><%= brewery.name %></p></h3>
+	</section>
+<% end %>
+</section>
+
+

@@ -39,4 +39,12 @@ RSpec.describe 'Beers Index Page' do
 			expect(page).to have_content("Dry Hopped: false")
 		end
   end
+	# User Story 8
+	it "displays a link to the beers index" do 
+		visit "/breweries"
+
+		click_link("All Beers")
+
+		expect(current_path).to eq("/beers")
+	end
 end 

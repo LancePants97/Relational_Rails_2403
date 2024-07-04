@@ -9,7 +9,6 @@ RSpec.describe 'the breweries show page' do
   it 'can show the brewerys name, beers on tap, and pet friendly status' do    
     visit "/breweries/#{@tlb.id}"
 
-
     expect(page).to have_content("Twin Lights")
     expect(page).to have_content("8")
     expect(page).to have_content("Pet Friendly: true")

@@ -1,6 +1,6 @@
 <section id="brewery-<%= @brewery.id %>">
 <h3><p><%= @brewery.name %></p></h3>
+<%= link_to "Our Beers", "/breweries/#{@brewery.id}/beers" %>
 <p>Beers on Tap: <%= @brewery.beers_on_tap %></p>
 <p>Pet Friendly: <%= @brewery.pet_friendly %></p>
 <p>Total Beers Made: <%= @brewery.beer_count %></p>
-

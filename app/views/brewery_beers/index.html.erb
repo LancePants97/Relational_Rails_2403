@@ -1,3 +1,9 @@
+<h1><%= @brewery.name %> Beers</h1>
+<section id="beers">
 <% @beers.each do |beer| %>
-    <%= link_to beer.style_name, "/beers/#{beer.id}" %>
+	<section id="beer-<%= beer.id %>">
+	<h3><p><%= beer.style_name %></p></h3>
+  <p>ABV: <%= beer.abv %>%</p>
+	<p>Dry Hopped: <%= beer.dry_hop %></p>
 <% end %>
+</section>

@@ -249,6 +249,11 @@
         "lines": [
           1,
           1,
+          null,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -265,24 +270,8 @@
           1,
           null
         ]
-      },
-      "/Users/lancenelson/turing_work/2mod/projects/relational_rails/app/controllers/brewery_beers_controller.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/lancenelson/turing_work/2mod/projects/relational_rails/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1720053254
+    "timestamp": 1720055427
   }
 }

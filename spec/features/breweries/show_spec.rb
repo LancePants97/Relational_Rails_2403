@@ -4,6 +4,10 @@ RSpec.describe 'the breweries show page' do
 	before(:each) do 
 		@tlb = Brewery.create!(name: 'Twin Lights', beers_on_tap: 8, pet_friendly: true)
     @kane = Brewery.create!(name: 'Kane', beers_on_tap: 15, pet_friendly: false)
+
+    @lager = @tlb.beers.create!(style_name: 'Lager', abv: 5, dry_hop: false)
+		@dv = @tlb.beers.create!(style_name: 'Double Vision', abv: 6, dry_hop: true)
+		@head_high = @kane.beers.create!(style_name: 'Head High', abv: 8, dry_hop: true)
 	end
   # User Story 2
   it 'can show the brewerys name, beers on tap, and pet friendly status' do    
@@ -29,4 +33,17 @@ RSpec.describe 'the breweries show page' do
   	expect(page).to have_content("15")
   	expect(page).to have_content("Pet Friendly: false")
 	end
+
+  # User Story 7
+  it "displays a count of the beers associated with this brewery" do 
+    visit "/breweries/#{@tlb.id}"
+    
+    expect(page).to have_content("Total Beers Made: 2")
+  end
+
+  it "displays a count of the beers associated with this brewery" do 
+    visit "/breweries/#{@kane.id}"
+    
+    expect(page).to have_content("Total Beers Made: 1")
+  end
 end

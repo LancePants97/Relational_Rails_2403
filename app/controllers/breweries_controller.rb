@@ -1,10 +1,9 @@
 class BreweriesController < ApplicationController
-    def index
-        @breweries = Brewery.all
-        # binding.pry
-    end
+  def index
+    @breweries = Brewery.order_by_recently_created
+	end
 
-    def show
-        @brewery = Brewery.find(params[:id])
-    end
+  def show
+    @brewery = Brewery.find(params[:id])
+  end
 end

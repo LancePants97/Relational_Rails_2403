@@ -50,9 +50,9 @@ RSpec.describe 'the breweries show page' do
   # User Story 10
 	it "displays a link to the beers index" do 
 		visit "/breweries/#{@tlb.id}"
-
+    
 		click_link("Our Beers")
-
+    
 		expect(current_path).to eq("/breweries/#{@tlb.id}/beers")
 	end
 

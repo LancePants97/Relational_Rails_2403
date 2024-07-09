@@ -5,4 +5,7 @@ class Beer < ApplicationRecord
 		where('dry_hop = ?', true)
 	end
 
+	def self.alphabetical_order
+		order(:style_name)
+	end
 end

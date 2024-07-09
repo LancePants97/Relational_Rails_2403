@@ -1,5 +1,6 @@
 <h1><%= @brewery.name %> Beers</h1>
 <%= link_to 'Add New Beer', "/breweries/#{@brewery.id}/beers/new" %>
+<%= link_to 'Alphabetize', "/breweries/#{@brewery.id}/alphabetical_beers" %> 
 <section id="beers">
 <% @beers.each do |beer| %>
 	<section id="beer-<%= beer.id %>">

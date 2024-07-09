@@ -240,6 +240,9 @@
           1,
           1,
           1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -315,6 +318,41 @@
           null
         ]
       },
+      "/Users/lancenelson/turing_work/2mod/projects/relational_rails/spec/features/breweries/beers/create_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/lancenelson/turing_work/2mod/projects/relational_rails/spec/features/breweries/beers/index_spec.rb": {
         "lines": [
           1,
@@ -369,6 +407,7 @@
           1,
           1,
           1,
+          null,
           null,
           1,
           1,
@@ -710,13 +749,28 @@
         "lines": [
           1,
           1,
-          4,
-          4,
+          6,
+          6,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1720485161
+    "timestamp": 1720486711
   }
 }

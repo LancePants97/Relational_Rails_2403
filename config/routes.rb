@@ -14,5 +14,7 @@ Rails.application.routes.draw do
   get '/breweries/:brewery_id/beers', to: 'brewery_beers#index'
   get '/breweries/:brewery_id/beers/new', to: 'brewery_beers#new'
   post '/breweries/:brewery_id/beers', to: 'brewery_beers#create'
+  get '/breweries/:brewery_id/beers/:beer_id/edit', to: 'brewery_beers#edit'
+  patch '/breweries/:brewery_id/beers/:beer_id', to: 'brewery_beers#update'
   get '/breweries/:brewery_id/alphabetical_beers', to: 'alphabetical_beers#index'
 end

@@ -56,4 +56,31 @@ RSpec.describe 'Breweries beers index' do
 
 		expect(@head_high.style_name).to appear_before(@sneakbox.style_name)
 	end
+
+		# User Story 18 (part 2)
+		it "displays a link to edit next to each beer" do 
+			visit "/breweries/#{@tlb.id}/beers"
+
+			within("#beer-#{@lager.id}") do
+				click_link "Edit Beer"
+			end
+	
+			expect(current_path).to eq("/breweries/#{@tlb.id}/beers/#{@lager.id}/edit")
+
+			fill_in "Style Name", with: "TLB Lager"
+			fill_in "ABV", with: "4"
+			check "Dry Hop"
+	
+			click_button "Update Beer"
+
+			expect(current_path).to eq("/breweries/#{@tlb.id}/beers/#{@lager.id}")
+	
+			visit "/breweries/#{@tlb.id}/beers"
+	
+			within("#beer-#{@lager.id}") do
+				expect(page).to have_content("TLB Lager")
+				expect(page).to have_content("4%")
+				expect(page).to have_content("Dry Hopped: true")
+			end
+		end
 end

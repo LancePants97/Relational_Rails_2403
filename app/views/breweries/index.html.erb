@@ -4,7 +4,8 @@
 <% @breweries.each do |brewery| %>
   <section id="brewery-<%= brewery.id %>">
   <h3><p><%= brewery.name %></p></h3>
-  <p><%= brewery.created_at %></p>
+  <p>Created at: <%= brewery.created_at %></p>
+  <%= link_to "Edit Brewery", "/breweries/#{brewery.id}/edit" %>
 	</section>
 <% end %>
 </section>

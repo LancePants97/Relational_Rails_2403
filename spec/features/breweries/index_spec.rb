@@ -37,11 +37,11 @@ RSpec.describe 'Breweries Index Page' do
     end
 
     within("#brewery-#{@tlb.id}") do
-      expect(page).to have_content(@tlb.created_at)
+      expect(page).to have_content("Created at: #{@tlb.created_at}")
     end
 
     within("#brewery-#{@kane.id}") do
-      expect(page).to have_content(@kane.created_at)
+      expect(page).to have_content("Created at: #{@kane.created_at}")
     end
   end
 
@@ -53,4 +53,28 @@ RSpec.describe 'Breweries Index Page' do
 
 		expect(current_path).to eq("/breweries")
 	end
+
+  # User Story 17
+  it "displays a link next to each brewery to edit it's info" do
+    visit "/breweries"
+
+    within("#brewery-#{@tlb.id}") do
+      click_link "Edit Brewery"
+    end
+
+    expect(current_path).to eq("/breweries/#{@tlb.id}/edit")
+
+    fill_in "name", with: "TLB"
+    fill_in "beers_on_tap", with: "9"
+
+    click_button "Update Brewery"
+
+    expect(current_path).to eq "/breweries/#{@tlb.id}"
+
+    visit "/breweries"
+
+    within("#brewery-#{@tlb.id}") do
+      expect(page).to have_content("TLB")
+    end
+  end
 end 

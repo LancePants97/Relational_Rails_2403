@@ -1,0 +1,13 @@
+<h1>Add Brewery</h1>
+<%= form_with url: "/breweries", method: :post, data: {turbo: false}, local: true do |f| %>
+  <p><%= f.label :name %>
+  <%= f.text_field :name %></p>
+
+  <p><%= f.label :beers_on_tap %>
+  <%= f.text_field :beers_on_tap %></p>
+
+  <p><%= f.label :pet_friendly, "Pet Friendly" %>
+    <%= f.check_box :pet_friendly %></p>
+
+  <p><%= f.submit "Add Brewery" %></p>
+<% end %>

@@ -4,4 +4,5 @@ class Beer < ApplicationRecord
 	def self.only_true
 		where('dry_hop = ?', true)
 	end
+
 end

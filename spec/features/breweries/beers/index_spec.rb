@@ -35,4 +35,25 @@ RSpec.describe 'Breweries beers index' do
 		expect(page).to have_content("ABV: #{@sneakbox.abv}")
 		expect(page).to have_content("Dry Hopped: #{@sneakbox.dry_hop}")
 	end
+
+	# User Story 16
+	it "has a button that sorts the beers in alphabetical order" do
+		visit "/breweries/#{@tlb.id}/beers"
+
+		click_link "Alphabetize"
+
+		expect(current_path).to eq("/breweries/#{@tlb.id}/alphabetical_beers")
+
+		expect(@dv.style_name).to appear_before(@lager.style_name)
+	end
+
+	it "has a button that sorts the beers in alphabetical order" do
+		visit "/breweries/#{@kane.id}/beers"
+
+		click_link "Alphabetize"
+
+		expect(current_path).to eq("/breweries/#{@kane.id}/alphabetical_beers")
+
+		expect(@head_high.style_name).to appear_before(@sneakbox.style_name)
+	end
 end

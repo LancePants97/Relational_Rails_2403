@@ -1,6 +1,6 @@
 class BeersController < ApplicationController
   def index
-    @beers = Beer.all
+    @beers = Beer.only_true
   end
 
   def show

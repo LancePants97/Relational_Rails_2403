@@ -9,7 +9,7 @@ RSpec.describe 'the breweries beer create page' do
 		@dv = @tlb.beers.create!(style_name: 'Double Vision', abv: 6, dry_hop: true)
 		@head_high = @kane.beers.create!(style_name: 'Head High', abv: 8, dry_hop: true)
   end
-  
+
   # User Story 13
   it "can click a link in a brewery's beers index to create a new beer" do
     visit "/breweries/#{@tlb.id}/beers"
@@ -19,7 +19,7 @@ RSpec.describe 'the breweries beer create page' do
     expect(current_path).to eq("/breweries/#{@tlb.id}/beers/new")
 
     fill_in "Style Name", with: "Euphoria"
-    fill_in "ABV", with: "5"
+    fill_in "ABV", with: "7"
     check "Dry Hop"
 
     click_button "Add Beer"
@@ -27,5 +27,7 @@ RSpec.describe 'the breweries beer create page' do
     expect(current_path).to eq("/breweries/#{@tlb.id}/beers")
 
     expect(page).to have_content("Euphoria")
+    expect(page).to have_content("ABV: 7")
+    expect(page).to have_content("Dry Hopped: true")
   end
 end

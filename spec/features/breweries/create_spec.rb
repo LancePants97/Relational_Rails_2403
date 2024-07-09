@@ -9,9 +9,9 @@ RSpec.describe 'the breweries create page' do
 		@dv = @tlb.beers.create!(style_name: 'Double Vision', abv: 6, dry_hop: true)
 		@head_high = @kane.beers.create!(style_name: 'Head High', abv: 8, dry_hop: true)
   end
-  
+  # User Story 11
   it "can click a link in the brewery index to create a new brewery" do
-    visit "/breweries/"
+    visit "/breweries"
     
     click_link "Add Brewery"
 

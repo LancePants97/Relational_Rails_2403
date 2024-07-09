@@ -3,8 +3,9 @@
 <% @beers.each do |beer| %>
   <section id="beer-<%= beer.id %>">
   <h3><p><%= beer.style_name %></p></h3>
-	<p>ABV: <%= beer.abv %></p>
+	<p>ABV: <%= beer.abv %>%</p>
 	<p>Dry Hopped: <%= beer.dry_hop %></p>
+	<%= link_to "Edit Beer", "/beers/#{beer.id}/edit" %>
 	</section>
 <% end %>
 </section>

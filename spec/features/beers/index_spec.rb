@@ -18,25 +18,25 @@ RSpec.describe 'Beers Index Page' do
 
 		# within("#beer-#{@lager.id}") do
 		# 	expect(page).to have_content("Lager")
-		# 	expect(page).to have_content("5")
+		# 	expect(page).to have_content("5%")
 		# 	expect(page).to have_content("Dry Hopped: false")
 		# end
 
 		within("#beer-#{@dv.id}") do
 			expect(page).to have_content("Double Vision")
-			expect(page).to have_content("6")
+			expect(page).to have_content("6%")
 			expect(page).to have_content("Dry Hopped: true")
 		end
 
 		within("#beer-#{@head_high.id}") do
 			expect(page).to have_content("Head High")
-			expect(page).to have_content("8")
+			expect(page).to have_content("8%")
 			expect(page).to have_content("Dry Hopped: true")
 		end
 		
 		# within("#beer-#{@sneakbox.id}") do
 		# 	expect(page).to have_content("Sneak Box")
-		# 	expect(page).to have_content("7")
+		# 	expect(page).to have_content("7%")
 		# 	expect(page).to have_content("Dry Hopped: false")
 		# end
   end
@@ -59,4 +59,31 @@ RSpec.describe 'Beers Index Page' do
 		expect(page).to_not have_content(@lager.style_name)
 		expect(page).to_not have_content(@sneakbox.style_name)
 	end
+
+	# User Story 18 (part 1)
+	it "displays a link to edit next to each beer" do 
+    visit "/beers"
+
+    within("#beer-#{@dv.id}") do
+			click_link "Edit Beer"
+    end
+
+		expect(current_path).to eq("/beers/#{@dv.id}/edit")
+
+		fill_in "Style Name", with: "DV"
+    fill_in "ABV", with: "7"
+		check "Dry Hop"
+
+    click_button "Update Beer"
+    
+    expect(current_path).to eq "/beers/#{@dv.id}"
+
+		visit "/beers"
+
+		within("#beer-#{@dv.id}") do
+			expect(page).to have_content("DV")
+			expect(page).to have_content("7%")
+			expect(page).to have_content("Dry Hopped: true")
+    end
+  end
 end 

@@ -1,0 +1,13 @@
+<h1>Edit Brewery</h1>
+<%= form_with url: "/breweries/#{@brewery.id}", method: :patch, data: {turbo: false}, local: true do |f| %>
+  <p><%= f.label :Name %>
+  <%= f.text_field :name, value: @brewery.name %></p>
+
+  <p><%= f.label :beers_on_Tap %>
+  <%= f.text_field :beers_on_tap, value: @brewery.beers_on_tap %></p>
+
+  <p><%= f.label :pet_friendly, "Pet Friendly" %>
+    <%= f.check_box :pet_friendly %></p>
+
+  <p><%= f.submit "Update Brewery" %></p>
+<% end %>

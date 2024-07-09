@@ -1,3 +1,4 @@
 <h1><p><%= @beer.style_name %></p></h1>
 <p>ABV: <%= @beer.abv %>%</p>
 <p>Dry Hopped: <%= @beer.dry_hop %></p>
+<%= link_to "Update Beer", "/beers/#{@beer.id}/edit" %>
